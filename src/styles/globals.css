@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: mont-serratbolditalic;
   src: url('../fonts/Montserrat-BoldItalic.ttf');

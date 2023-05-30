@@ -20,12 +20,12 @@ function ApareceCotacao(){
   ChamaApi()
 }
 
-// useEffect(() => {
-//   ApareceCotacao()
-//   setInterval(() =>{
-//     ApareceCotacao()
-//   }, 1500)
-// })
+useEffect(() => {
+  ApareceCotacao()
+  setInterval(() =>{
+    ApareceCotacao()
+  }, 1500)
+})
 ApareceCotacao()
   const [date, setDate] = useState([]);
   const [bid, setBid] = useState([]);
@@ -34,15 +34,12 @@ ApareceCotacao()
 
   return (
     <div>
-      <hr />
-      <div className="px-12 py-12">
-      <span>{props.titulo} {bid}</span>
-      <p>{date}</p>
-      <p>Valor mais alto: {high}</p>
-      <p>Valor mais baixo: {low}</p>
+      <div className="m-6 py-2 px-6 border-2 rounded-md border-slate-900">
+        <span>{props.titulo} {bid}</span>
+        <p>Consulta mais recente: {date}</p>
+        <p>Valor mais alto: {high}</p>
+        <p>Valor mais baixo: {low}</p>
       </div>
-      <hr />
-
     </div>
   );
 }
