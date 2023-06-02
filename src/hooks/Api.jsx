@@ -34,7 +34,7 @@ ApareceCotacao()
 
   return (
     <div>
-      <div className="m-6 py-2 px-6 border-2 rounded-md border-slate-900">
+      <div className="w-4/5 m-6 py-2 px-6 border-2 rounded-md border-slate-900 drop-shadow-md">
         <span>{props.titulo} {bid}</span>
         <p>Consulta mais recente: {date}</p>
         <p>Valor mais alto: {high}</p>
