@@ -57,7 +57,7 @@ function App() {
             <Api moeda="EUR-BRL" titulo='Euro:'/>
       </div>
       <Container maxWidth="md" sx={boxStyles}>
-        <Typography variant="h5" sx={{marginBottom: "2rem"}}>Stay Ahead with Accurate Conversions</Typography>
+        <Typography variant="h5" sx={{marginBottom: "2rem"}}>Conversão de moedas em tempo real</Typography>
         <Grid container spacing={2}>
           <InputAmount />
           <SelectCountry value={fromCurrency} setValue={setFromCurrency} label="From" />
